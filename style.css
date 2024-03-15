@@ -1,0 +1,139 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   
+    background-color: rgb(221, 216, 236);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+.navbar{
+   
+    height: auto;
+    background-color:  rgb(103, 103, 161);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.right{
+    
+    display: flex;
+    justify-content: center;
+}
+.left{
+    font-size: 1.3rem;
+}
+.navbar a{
+    margin: 0 20px;
+    color: rgb(21, 19, 19);
+    text-decoration: none;
+}
+a:hover{
+    color: lavender;
+    font-size: 1.03rem;
+}
+i:hover{
+    color: lavender;
+    font-size: 1.01rem;
+}
+.left:hover{
+    color: lavender;
+}
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0 ;
+}
+.firstSection> div{
+    width: 40%;
+}
+.leftSection{
+    font-size: 2rem;
+    
+}
+.rightSection img{
+    width: 80%;
+    margin: 30px 0;
+}
+.purple{
+    color:  rgb(143, 143, 232);
+}
+.text-grey{
+    color: grey;
+    font-size: 12px;
+}
+#element{
+    color:  rgb(143, 143, 232);
+}
+.secondSection{
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+main hr{
+    border: 0;
+    background: rgb(112, 112, 241);
+    height: 1.8px;
+    margin: 40px 80px;
+}
+.secondSection h2{
+    font-size: 1.8rem;
+}
+.secondSection .box{
+   background-color: rgb(144, 144, 241);
+   width:80vw ;
+   height:1px ;
+   margin:56px 0 ;
+   display: flex;
+}
+footer{
+    color: rgb(221, 216, 236);
+    min-height: 50px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(123, 123, 177) ;
+}
+footer i:hover{
+    color: rgb(54, 54, 126);
+}
+.secondSection .vertical{
+    height: 93px;
+     width: 1px;
+     background: rgb(112, 112, 241);
+     margin: 0 100px;
+}
+.image-top{
+    width: 23px;
+    position: relative;
+    top: -32px;
+    left: -9px;
+}
+.vertical-title{
+    position: relative;
+    top: 75px;
+    width: 150px;
+}
+.vertical-desc{
+    position: relative;
+    /* left: -100px; */
+    top: 100px;
+    width: 150px;
+    font-size: 9px;
+}
+.vertical-desc a{
+    font-size: 10px;
+    color: rgb(21, 19, 19);
+    text-decoration: none;
+   
+}
+.vertical-desc a:hover{
+    color: rgb(132, 132, 203);
+}

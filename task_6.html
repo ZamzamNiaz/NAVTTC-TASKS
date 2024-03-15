@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Report Form</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: grid;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group textarea,
+.form-group select,
+.form-group div {
+    grid-column: span 2;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group select {
+    width: calc(100% - 22px);
+}
+
+.form-group .hobbies-container {
+    grid-column: span 3;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-group .hobbies-container div {
+    margin-right: 10px;
+}
+
+.btn-group {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <form action="#">
+        <h2>Information Table</h2>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address">
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="Pakistan" selected>Pakistan</option>
+                <option value="Afghanistan">Afghanistan</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="India">India</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Sri Lanka">Sri Lanka</option>
+                <option value="Bhutan">Bhutan</option>
+            </select>
+            <label>Gender:</label>
+            <div class="gender-container">
+                <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female" required>
+                <label for="female">Female</label>
+            </div>
+            <label>Hobbies:</label>
+            <div class="hobbies-container">
+                <div>
+                    <input type="checkbox" id="reading" name="hobbies[]" value="Reading">
+                    <label for="reading">Reading</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="music" name="hobbies[]" value="Listening to Music">
+                    <label for="music">Listening to Music</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="gardening" name="hobbies[]" value="Gardening">
+                    <label for="gardening">Gardening</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="swimming" name="hobbies[]" value="Swimming">
+                    <label for="swimming">Swimming</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="athletics" name="hobbies[]" value="Athletics">
+                    <label for="athletics">Athletics</label>
+                </div>
+            </div>
+            <label for="website">Your Website:</label>
+            <input type="text" id="website" name="website">
+            <label for="info">Other Information About You:</label>
+            <textarea id="info" name="info"></textarea>
+        </div>
+        <div class="btn-group">
+            <button type="submit" class="btn">Send Report</button>
+            <button type="reset" class="btn">Erase Report</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
