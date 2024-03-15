@@ -12,6 +12,7 @@ body{
 .navbar{
    
     height: auto;
+    width: auto;
     background-color:  rgb(103, 103, 161);
     display: flex;
     align-items: center;
@@ -92,7 +93,8 @@ main hr{
 }
 footer{
     color: rgb(221, 216, 236);
-    min-height: 50px;
+    height: auto;
+    width: auto;
     padding-top: 50px;
     padding-bottom: 10px;
     display: flex;
@@ -123,7 +125,6 @@ footer i:hover{
 }
 .vertical-desc{
     position: relative;
-    /* left: -100px; */
     top: 100px;
     width: 150px;
     font-size: 9px;
