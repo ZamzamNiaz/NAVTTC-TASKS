@@ -152,14 +152,18 @@ footer i:hover{
         left: -100px;
     }
     .vertical-title{
-    top: -30px;
-    left: -80px;
+    top: -60px;
+    left: -70px;
     justify-content: space-evenly;
     }
     .vertical-desc{
         display: flex;
         top: -30px;
         left: -80px;
+    }
+    .vertical-desc a {
+        margin: 8px;
+        margin-top: -25px;
     }
    
  }
