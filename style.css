@@ -12,7 +12,7 @@ body{
 .navbar{
    
     height: auto;
-    width: auto;
+    width: 100%;
     background-color:  rgb(103, 103, 161);
     display: flex;
     align-items: center;
@@ -94,7 +94,7 @@ main hr{
 footer{
     color: rgb(221, 216, 236);
     height: auto;
-    width: auto;
+    width: 100%;
     padding-top: 50px;
     padding-bottom: 10px;
     display: flex;
@@ -122,12 +122,15 @@ footer i:hover{
     position: relative;
     top: 75px;
     width: 150px;
+    font-weight: bold;
+   
 }
 .vertical-desc{
     position: relative;
     top: 100px;
     width: 150px;
     font-size: 9px;
+    
 }
 .vertical-desc a{
     font-size: 10px;
@@ -138,3 +141,28 @@ footer i:hover{
 .vertical-desc a:hover{
     color: rgb(132, 132, 203);
 }
+ @media(max-width : 600px){
+    .box{
+        flex-wrap: wrap;
+    }
+    .secondSection .vertical{
+        background-color: rgb(221, 216, 236);
+    }
+    .image-top{
+        left: -100px;
+    }
+    .vertical-title{
+    top: -30px;
+    left: -80px;
+    justify-content: space-evenly;
+    }
+    .vertical-desc{
+        display: flex;
+        top: -30px;
+        left: -80px;
+    }
+   
+ }
+
+  
+  
