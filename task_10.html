@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Position Change on Hover</title>
+<style>
+    .container {
+  position: relative;
+  width: 500px; 
+  height: 300px; 
+}
+
+#movingImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: top 0.5s, left 0.5s; 
+}
+
+#movingImage:hover {
+  top: 50px; 
+  left: 50px; 
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img id="movingImage" src="original_image.jpg" alt="Original Image">
+</div>
+
+<script>
+    const movingImage = document.getElementById('movingImage');
+
+movingImage.addEventListener('mouseover', () => {
+ 
+});
+
+</script>
+
+</body>
+</html>

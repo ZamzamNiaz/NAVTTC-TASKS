@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Two Navigation Bars</title>
+<style>
+    .top-navbar {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.top-navbar a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.left-navbar {
+    display: grid;
+    justify-content: space-evenly;
+    height: 100%;
+  position: fixed;
+  top: 10px;
+  left: 0;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+.left-navbar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="top-navbar">
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Contact</a>
+</div>
+
+<div class="left-navbar">
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+  <a href="#">Link 4</a>
+</div>
+
+</body>
+</html>

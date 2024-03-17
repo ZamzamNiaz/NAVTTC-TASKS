@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day of the Week</title>
+</head>
+<body>
+
+<h1 id="dayOfWeekMessage"></h1>
+
+<script>
+  // Get current day index 
+  var currentDayIndex = new Date().getDay();
+
+  // Define day of the week message based on current day
+  var dayOfWeekMessage;
+  switch (currentDayIndex) {
+    case 0:
+      dayOfWeekMessage = "Sunday";
+      break;
+    case 1:
+      dayOfWeekMessage = "Monday";
+      break;
+    case 2:
+      dayOfWeekMessage = "Tuesday";
+      break;
+    case 3:
+      dayOfWeekMessage = "Wednesday";
+      break;
+    case 4:
+      dayOfWeekMessage = "Thursday";
+      break;
+    case 5:
+      dayOfWeekMessage = "Friday";
+      break;
+    case 6:
+      dayOfWeekMessage = "Saturday";
+      break;
+    default:
+      dayOfWeekMessage = "Unknown";
+      break;
+  }
+
+  // print day
+  document.getElementById("dayOfWeekMessage").innerText = "Today is " + dayOfWeekMessage + ".";
+</script>
+
+</body>
+</html>
