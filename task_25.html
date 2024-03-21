@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slide Down Example</title>
+<style>
+  #content {
+    display: none;
+  }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+<button id="slideDownButton">Slide Down Content</button>
+
+<div id="content">
+  <p>This is the content that will slide down.</p>
+</div>
+
+<script>
+$(document).ready(function(){
+  $("#slideDownButton").click(function(){
+    $("#content").slideDown();
+  });
+});
+</script>
+
+</body>
+</html>

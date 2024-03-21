@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hide and Show Example</title>
+<style>
+  #paragraph {
+    display: block;
+  }
+</style>
+</head>
+<body>
+
+<p id="paragraph">This is a paragraph line.</p>
+
+<button onclick="hideParagraph()">Hide</button>
+<button onclick="showParagraph()">Show</button>
+
+<script>
+function hideParagraph() {
+  document.getElementById("paragraph").style.display = "none";
+}
+
+function showParagraph() {
+  document.getElementById("paragraph").style.display = "block";
+}
+</script>
+
+</body>
+</html>
